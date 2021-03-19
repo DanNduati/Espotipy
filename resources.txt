@@ -7,3 +7,20 @@ Frequently Asked Questions
 Accessing your data without showing a login form
 I want to interact with the web API and show some data on my website. I see that the endpoints I require authorization, but I don’t need/want a login window to pop-up, because I want to grant my own app access to my own playlists once. Is there any way of doing this?
 You basically need an access token and a refresh token issued for your user account. To obtain a pair of access token - refresh token, follow the Authorization Code Flow (if you need a certain scope to be approved) or Client Credentials (if you just need to sign your request, like when fetching a certain playlist). Once you obtain them, you can use your access token and refresh it when it expires without having to show any login form.
+
+
+libraries : https://developer.spotify.com/documentation/web-api/libraries/ 
+1. spotipy : https://github.com/plamere/spotipy
+2. Tekore : https://pypi.org/project/tekore/
+
+Example app code : https://github.com/spotify/web-api-auth-examples
+
+Get the users currently playing track : https://developer.spotify.com/documentation/web-api/reference/#endpoint-get-the-users-currently-playing-track
+
+
+Authorization flows : https://developer.spotify.com/documentation/general/guides/authorization-guide/
+
+web-api tutorial : https://developer.spotify.com/documentation/web-api/quick-start/
+
+My dashboard : https://developer.spotify.com/dashboard/applications/b5245b8096a943ce9ce7b001f367a590
+
