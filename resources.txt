@@ -5,8 +5,17 @@ Authorization Scopes: https://developer.spotify.com/documentation/general/guides
 
 Frequently Asked Questions
 Accessing your data without showing a login form
-I want to interact with the web API and show some data on my website. I see that the endpoints I require authorization, but I don’t need/want a login window to pop-up, because I want to grant my own app access to my own playlists once. Is there any way of doing this?
-You basically need an access token and a refresh token issued for your user account. To obtain a pair of access token - refresh token, follow the Authorization Code Flow (if you need a certain scope to be approved) or Client Credentials (if you just need to sign your request, like when fetching a certain playlist). Once you obtain them, you can use your access token and refresh it when it expires without having to show any login form.
+I want to interact with the web API and show some data on my 
+website. I see that the endpoints I require authorization,
+but I don’t need/want a login window to pop-up, because I 
+want to grant my own app access to my own playlists once. 
+Is there any way of doing this?
+You basically need an access token and a refresh token issued 
+for your user account. To obtain a pair of access token - refresh token,
+ follow the Authorization Code Flow (if you need a certain scope to be approved)
+or Client Credentials (if you just need to sign your request, like when fetching a certain playlist). 
+Once you obtain them, you can use your access token and refresh 
+it when it expires without having to show any login form.
 
 
 libraries : https://developer.spotify.com/documentation/web-api/libraries/ 
@@ -24,3 +33,47 @@ web-api tutorial : https://developer.spotify.com/documentation/web-api/quick-sta
 
 My dashboard : https://developer.spotify.com/dashboard/applications/b5245b8096a943ce9ce7b001f367a590
 
+Authorization flows
+flow-------------------------->Access user resources------------->Requires Secret Key(Server-side)------------->Access Token Refresh
+Authorization code                  yes											yes											yes
+Authorization code with PKCE        yes											No											yes
+Client Credentials					No											yes											No
+implicit grant						yes											No											No
+
+
+1. Authorization Code Flow
+ The authorization code grant type is used to obtain both access
+   tokens and refresh tokens and is optimized for confidential clients.
+   Since this is a redirection-based flow, the client must be capable of
+   interacting with the resource owner's user-agent (typically a web
+   browser) and capable of receiving incoming requests (via redirection)
+   from the authorization server.
+
+     +----------+
+     | Resource |
+     |   Owner  |
+     |          |
+     +----------+
+          ^
+          |
+         (B)
+     +----|-----+          Client Identifier      +---------------+
+     |         -+----(A)-- & Redirection URI ---->|               |
+     |  User-   |                                 | Authorization |
+     |  Agent  -+----(B)-- User authenticates --->|     Server    |
+     |          |                                 |               |
+     |         -+----(C)-- Authorization Code ---<|               |
+     +-|----|---+                                 +---------------+
+       |    |                                         ^      v
+      (A)  (C)                                        |      |
+       |    |                                         |      |
+       ^    v                                         |      |
+     +---------+                                      |      |
+     |         |>---(D)-- Authorization Code ---------'      |
+     |  Client |          & Redirection URI                  |
+     |         |                                             |
+     |         |<---(E)----- Access Token -------------------'
+     +---------+       (w/ Optional Refresh Token)
+
+   Note: The lines illustrating steps (A), (B), and (C) are broken into
+   two parts as they pass through the user-agent.
