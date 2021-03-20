@@ -1,0 +1,18 @@
+This is my personal breakdown of what youll find at : https://developer.spotify.com/documentation/web-api/quick-start/
+1. Setup an account : 
+	-> To use the Web API, start by creating a Spotify user account (Premium or Free).
+	   To do that, simply sign up at www.spotify.com.
+2. Register your application : 
+	-> Any application can request data from Spotify Web API endpoints 
+	and many endpoints are open and will return data without requiring registration.
+	However, if your application seeks access to a user’s personal data (profile, playlists, etc.)
+	it must be registered. Registered applications also get other benefits, like higher rate limits at some endpoints.
+	You can register your application, even before you have created it.
+
+3. Create your app
+https://github.com/spotify/web-api-auth-examples
+
+The app uses the Authorization code flow which is as follows:
+1. Have the application request authorization - this requires the user to login and authorize access
+2. Have your application request refresh and access tokens; Spotify returns access and refresh tokens
+3. Add a route to send auth token to external devices
