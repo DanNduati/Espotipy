@@ -6,7 +6,8 @@ var cookieParser = require('cookie-parser');
 
 var client_id = 'b5245b8096a943ce9ce7b001f367a590';
 var client_secret = '60d199d002684d5891cb5e03d03ca372';
-var redirect_uri = 'http://localhost:8888/callback'
+var redirect_uri = 'http://localhost:8888/callback';
+var code = null;
 
 /**
  * Generates a random string containing numbers and letters
@@ -37,7 +38,8 @@ app.get('/login', function(req, res) {
     res.cookie(stateKey, state);
 
     // your application requests authorization
-    var scope = 'user-read-private user-read-email';
+    // the scopes are specified here
+    var scope = 'user-read-private user-read-email user-read-playback-state';
     res.redirect('https://accounts.spotify.com/authorize?' +
         querystring.stringify({
             response_type: 'code',
@@ -47,12 +49,21 @@ app.get('/login', function(req, res) {
             state: state
         }));
 });
+//add route to enable access(read only) of authorization code externally(esp32)
+/*app.get('/getauthCode', function(req, res) {
+    var code = req.query.code;
+    res.send(code);
+    console.log("Login Success auth code sent");
+});*/
+app.get('/getauthCode', function(req, res) {
+    code = req.query.code;
+    //res.send(code);
+    //console.log(code);
+});
 
 app.get('/callback', function(req, res) {
 
-    // your application requests refresh and access tokens
-    // after checking the state parameter
-
+    //authorization code to be exchanged with an access token afterwards
     var code = req.query.code || null;
     var state = req.query.state || null;
     var storedState = req.cookies ? req.cookies[stateKey] : null;
@@ -133,6 +144,7 @@ app.get('/refresh_token', function(req, res) {
         }
     });
 });
+
 
 console.log('Listening on 8888');
 app.listen(8888);
