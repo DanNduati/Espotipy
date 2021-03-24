@@ -1,0 +1,10 @@
+1. add app-remote-control authorization scope to the node app
+2. Add the shitty authcode route
+3. Get the access and refresh token on the esp32
+4. Get current playing song and Control playback on spotify via 
+the ESP32
+5. Gui - OLED display
+
+------------------------
+rebuild the app in flask
+------------------------
