@@ -38,4 +38,5 @@ Thumbs.db
 #micropython test files
 board/tests
 #auth test
+/authorizationFLow.py
 authorizationFlow.py
