@@ -1,0 +1,146 @@
+{
+    "device": {
+        "id": "4079bc43bf42a0a622f8d69950fef7ad8e6e27ea",
+        "is_active": true,
+        "is_private_session": false,
+        "is_restricted": false,
+        "name": "Web Player (Chrome)",
+        "type": "Computer",
+        "volume_percent": 100
+    },
+    "shuffle_state": true,
+    "repeat_state": "off",
+    "timestamp": 1616710470226,
+    "context": {
+        "external_urls": {
+            "spotify": "https://open.spotify.com/album/2pVb3IsYOZWdYNk6KJIjh4"
+        },
+        "href": "https://api.spotify.com/v1/albums/2pVb3IsYOZWdYNk6KJIjh4",
+        "type": "album",
+        "uri": "spotify:album:2pVb3IsYOZWdYNk6KJIjh4"
+    },
+    "progress_ms": 62256,
+    "item": {
+        "album": {
+            "album_type": "single",
+            "artists": [{
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/09vo12hHajgG2cZzq0rGmE"
+                },
+                "href": "https://api.spotify.com/v1/artists/09vo12hHajgG2cZzq0rGmE",
+                "id": "09vo12hHajgG2cZzq0rGmE",
+                "name": "Bensoul",
+                "type": "artist",
+                "uri": "spotify:artist:09vo12hHajgG2cZzq0rGmE"
+            }, {
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/4Rj9lQm9oSiMlirgpsM6eo"
+                },
+                "href": "https://api.spotify.com/v1/artists/4Rj9lQm9oSiMlirgpsM6eo",
+                "id": "4Rj9lQm9oSiMlirgpsM6eo",
+                "name": "Sauti Sol",
+                "type": "artist",
+                "uri": "spotify:artist:4Rj9lQm9oSiMlirgpsM6eo"
+            }, {
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/7xPDTxQrpZPvvI0LzuO73p"
+                },
+                "href": "https://api.spotify.com/v1/artists/7xPDTxQrpZPvvI0LzuO73p",
+                "id": "7xPDTxQrpZPvvI0LzuO73p",
+                "name": "Nviiri The Storyteller",
+                "type": "artist",
+                "uri": "spotify:artist:7xPDTxQrpZPvvI0LzuO73p"
+            }],
+            "available_markets": ["AD", "AE", "AL", "AR", "AT", "AU", "BA", "BE", "BG", "BH", "BO", "BR", "BY", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "DZ", "EC", "EE", "EG", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HR", "HU", "ID", "IE", "IL", "IN", "IS", "IT", "JO", "JP", "KW", "KZ", "LB", "LI", "LT", "LU", "LV", "MA", "MC", "MD", "ME", "MK", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "OM", "PA", "PE", "PH", "PL", "PS", "PT", "PY", "QA", "RO", "RS", "RU", "SA", "SE", "SG", "SI", "SK", "SV", "TH", "TN", "TR", "TW", "UA", "US", "UY", "VN", "XK", "ZA"],
+            "external_urls": {
+                "spotify": "https://open.spotify.com/album/2pVb3IsYOZWdYNk6KJIjh4"
+            },
+            "href": "https://api.spotify.com/v1/albums/2pVb3IsYOZWdYNk6KJIjh4",
+            "id": "2pVb3IsYOZWdYNk6KJIjh4",
+            "images": [{
+                "height": 640,
+                "url": "https://i.scdn.co/image/ab67616d0000b273af97f289a639d7cf3b50698a",
+                "width": 640
+            }, {
+                "height": 300,
+                "url": "https://i.scdn.co/image/ab67616d00001e02af97f289a639d7cf3b50698a",
+                "width": 300
+            }, {
+                "height": 64,
+                "url": "https://i.scdn.co/image/ab67616d00004851af97f289a639d7cf3b50698a",
+                "width": 64
+            }],
+            "name": "NAIROBI",
+            "release_date": "2021-01-15",
+            "release_date_precision": "day",
+            "total_tracks": 1,
+            "type": "album",
+            "uri": "spotify:album:2pVb3IsYOZWdYNk6KJIjh4"
+        },
+        "artists": [{
+            "external_urls": {
+                "spotify": "https://open.spotify.com/artist/09vo12hHajgG2cZzq0rGmE"
+            },
+            "href": "https://api.spotify.com/v1/artists/09vo12hHajgG2cZzq0rGmE",
+            "id": "09vo12hHajgG2cZzq0rGmE",
+            "name": "Bensoul",
+            "type": "artist",
+            "uri": "spotify:artist:09vo12hHajgG2cZzq0rGmE"
+        }, {
+            "external_urls": {
+                "spotify": "https://open.spotify.com/artist/4Rj9lQm9oSiMlirgpsM6eo"
+            },
+            "href": "https://api.spotify.com/v1/artists/4Rj9lQm9oSiMlirgpsM6eo",
+            "id": "4Rj9lQm9oSiMlirgpsM6eo",
+            "name": "Sauti Sol",
+            "type": "artist",
+            "uri": "spotify:artist:4Rj9lQm9oSiMlirgpsM6eo"
+        }, {
+            "external_urls": {
+                "spotify": "https://open.spotify.com/artist/7xPDTxQrpZPvvI0LzuO73p"
+            },
+            "href": "https://api.spotify.com/v1/artists/7xPDTxQrpZPvvI0LzuO73p",
+            "id": "7xPDTxQrpZPvvI0LzuO73p",
+            "name": "Nviiri The Storyteller",
+            "type": "artist",
+            "uri": "spotify:artist:7xPDTxQrpZPvvI0LzuO73p"
+        }, {
+            "external_urls": {
+                "spotify": "https://open.spotify.com/artist/5VnDOE1MEaJ0VOgSypOi3u"
+            },
+            "href": "https://api.spotify.com/v1/artists/5VnDOE1MEaJ0VOgSypOi3u",
+            "id": "5VnDOE1MEaJ0VOgSypOi3u",
+            "name": "Mejja",
+            "type": "artist",
+            "uri": "spotify:artist:5VnDOE1MEaJ0VOgSypOi3u"
+        }],
+        "available_markets": ["AD", "AE", "AL", "AR", "AT", "AU", "BA", "BE", "BG", "BH", "BO", "BR", "BY", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "DZ", "EC", "EE", "EG", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HR", "HU", "ID", "IE", "IL", "IN", "IS", "IT", "JO", "JP", "KW", "KZ", "LB", "LI", "LT", "LU", "LV", "MA", "MC", "MD", "ME", "MK", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "OM", "PA", "PE", "PH", "PL", "PS", "PT", "PY", "QA", "RO", "RS", "RU", "SA", "SE", "SG", "SI", "SK", "SV", "TH", "TN", "TR", "TW", "UA", "US", "UY", "VN", "XK", "ZA"],
+        "disc_number": 1,
+        "duration_ms": 220310,
+        "explicit": false,
+        "external_ids": {
+            "isrc": "KEA5J2000001"
+        },
+        "external_urls": {
+            "spotify": "https://open.spotify.com/track/1QzPmQynOP65qaOuZDJUbm"
+        },
+        "href": "https://api.spotify.com/v1/tracks/1QzPmQynOP65qaOuZDJUbm",
+        "id": "1QzPmQynOP65qaOuZDJUbm",
+        "is_local": false,
+        "name": "Nairobi",
+        "popularity": 44,
+        "preview_url": "https://p.scdn.co/mp3-preview/4e9c25c990c7673906ee32394075ec997f7c22f9?cid=b5245b8096a943ce9ce7b001f367a590",
+        "track_number": 1,
+        "type": "track",
+        "uri": "spotify:track:1QzPmQynOP65qaOuZDJUbm"
+    },
+    "currently_playing_type": "track",
+    "actions": {
+        "disallows": {
+            "resuming": true,
+            "skipping_prev": true
+        }
+    },
+    "is_playing": true
+}
+s
