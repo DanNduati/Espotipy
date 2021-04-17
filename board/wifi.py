@@ -16,6 +16,7 @@ def conn(ssid,pwd):
     print(wlan.ifconfig())
     print("Connected succesfuly to ",ssid)
     return(wlan.isconnected())
+
 def connect():
     return(conn(SSID,PASSWORD))
     #print('connected successfully')
