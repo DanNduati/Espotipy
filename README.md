@@ -1,3 +1,7 @@
-# ESPOTIPY
-## This is one of my shitty weekend side projects i want to control my spotify playback via the esp32 
-## and get currenly playing tracks to display on the oled
+# **ESPOTIPY**
+
+
+## ToDo
+- [x] Consumes json metadata from spotify's web api on the esp32
+- [x] Display users currently playing track on an oled display connected to the esp32 ()
+- [ ] Control playback
